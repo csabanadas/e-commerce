@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+* {
+    font-family: 'Kumbh Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior:smooth ;
+    overflow: hidden;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+p {
+    font-size: 16px;
+}
+li {
+    list-style: none;
+}
+
+/* Navigation */
+
+
+.mobileMenu {
+    display: none;
+}
+
+#menuItems {
+    display: flex;
+}
+#logo {
+    height: 100%;
+    padding-bottom: 2rem;
+}
+#menuItems li {
+    display: inline-block;
+    margin-right: 1rem;
+    padding-bottom: 2rem;
+    transition: border-bottom 0.2s;
+}
+
+#menuItems li:hover {
+    border-bottom: 3px solid hsl(26, 100%, 55%);
+}
+
+.menu-col-left, .menu-col-right {
+    display: flex;
+    flex-basis: 50%;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.menu-col-right {
+    justify-content: flex-end;
+}
+.rightItems {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-bottom: 2rem;
+}
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 25px;
+}
+.avatar {
+    padding-bottom: 2rem;
+}
+#avatar {
+    width: 50px;
+    transition: outline 0.1s;
+}
+#avatar:hover {
+    outline: 3px solid hsl(26, 100%, 55%);
+    border-radius: 50px;
+}
+
+.horizontal-ruler {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -13px;
+}
+.horizontalRuler {
+    width: 83%;
+    height: 0.05px;
+    background-color: rgb(231, 228, 228);   
+}
+
+/*Item Images*/
+
+.container {
+    display: flex;
+    margin: 3em 8% 8% 8%;
+}
+.imageContainer {
+    flex-basis: 50%;
+    margin-right: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#mainImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.gallery {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.thumbnails {
+    width: 21.5%;
+    border-radius: 10px;
+    margin: 10px;
+}
+.thumbnails:hover {
+    opacity: 75%;
+}
+
+.thumbnails:active {
+    opacity: 75%;
+}
+
+/*Item Description*/
+
+.productDescription {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 3% 18% 3% 2%;
+
+}
+.productDescription p, .productDescription h4 {
+    color: rgb(92, 91, 91);
+}
+.brand {
+    font-variant: small-caps;
+    color: hsl(26, 100%, 55%);
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-size: small;
+}
+.price {
+    font-weight: 700;
+}
+.prices {
+    display: flex;
+}
+.discountContainer h4 {
+    color:hsl(26, 100%, 55%);
+}
+.discountContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(25, 100%, 94%);
+    border-radius: 2%;
+    margin-left: 2rem;
+}
+.sales {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.addProducts {
+    flex-basis: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(230, 231, 231);
+    border-radius: 5px;
+}
+#minus, #plus {
+    padding: 15px;
+    cursor: pointer;
+}
+#minus:hover, #plus:hover {
+    opacity: 75%;
+}
+.addToCart {
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: hsl(26, 100%, 55%);
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.addToCart:hover {
+    opacity: 75%;
+}
+.addToCart p {
+    color: white;
+    margin-left: 0.5rem;
+}
+
+/* Mobile Menu */
+
+@media only screen and (min-width: 700px) {
+    .mobileMenu {
+        display: block;
+    }
+    #iconMenu {
+        display: none;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .container {
+        flex-direction: column;
+    }
+    .imageContainer, .productDescription {
+        flex-basis: 100%;
+        width: 100%;
+    }
+    .brand {
+        margin: 2rem 0;
+    }
+    .productDescription h1, h3, .item-description, .discountContainer, .del {
+        margin-bottom: 2rem;
+    }
+    .sales {
+        flex-direction: column;
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .addProducts, .addToCart {
+        flex-basis: 100%;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 2rem;
+        padding: 5%;
+    }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+<!--Links-->
+
+<header id="header">
+  <div class="menu-col-left">
+    <img id="iconMenu" src="/images/icon-menu.svg" alt="">
+    <img id="logo" src="images/logo.svg" alt="">
+    <div class="mobileMenu">
+      <ul id="menuItems">
+        <li><a href="">Collections</a></li>
+        <li><a href="">Men</a></li>
+        <li><a href="">Women</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+     </div> 
+  </div>
+  <div class="menu-col-right">  
+    <img class="rightItems" src="images/icon-cart.svg" alt="">
+    <div class="avatar"><img src="images/image-avatar.png" id="avatar" alt=""></div>
+  </div>
+</header>
+<div class="horizontal-ruler">
+<div class="horizontalRuler"></div>
+</div>
+
+<div class="container">
+  <div class="imageContainer">
+    
+      <img id="mainImage" src="images/image-product-1.jpg" alt="">
+    
+    <div class="gallery">
+      <img class="thumbnails" src="images/image-product-1-thumbnail.jpg" alt="">
+      <img class="thumbnails" src="images/image-product-2-thumbnail.jpg" alt="">
+      <img class="thumbnails" src="images/image-product-3-thumbnail.jpg" alt="">
+      <img class="thumbnails" src="images/image-product-4-thumbnail.jpg" alt="">
+    </div>
+  </div>
+  <!--Product Description-->
+  <div class="productDescription">
+    <h3 class="brand">SNEAKER COMPANY</h3>
+    <h1>Fall Limited Edition Sneakers</h1>
+    <p class="item-description">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+    durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+    <div class="prices">
+      <h3 class="price">$125.00</h3>
+      <div class="discountContainer"><h4>50%</h4></div>
+    </div>
+    <h4 class="del"><del>$250.00</del></h4>
+    <div class="sales">
+      <div class="addProducts">
+        <img id="minus" src="images/icon-minus.svg" alt="">
+        <p id="number">0</p>
+        <img id="plus" src="images/icon-plus.svg" alt="">
+      </div>
+      <div class="addToCart">
+        <img src="images/icon-cart.svg" alt="">
+        <p>Add to cart</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
